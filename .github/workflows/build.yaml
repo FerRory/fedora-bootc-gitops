@@ -13,11 +13,10 @@ jobs:
   build:
     name: Build bootc image
 
-    #change ubuntu-latest to runner if using the included gitea configs
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-24.04-arm
     env:
-      IMAGE_NAME: bootc-example
-      REGISTRY: ghcr.io/[USERNAME]
+      IMAGE_NAME: fedora-bootc-gitops
+      REGISTRY: ghcr.io/ferrory
    
     steps:
       - name: Clone the repository
