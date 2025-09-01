@@ -13,5 +13,6 @@ RUN ln -s /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
 
 RUN bootc container lint
 
-LABEL org.opencontainers.image.source https://github.com/ferrory/fedora-bootc-gitops
+LABEL org.opencontainers.image.source="https://github.com/ferrory/fedora-bootc-gitops"
 LABEL org.opencontainers.image.description="My Fedora Bootc GitOps bootable container"
+LABEL org.opencontainers.image.license="MIT"
